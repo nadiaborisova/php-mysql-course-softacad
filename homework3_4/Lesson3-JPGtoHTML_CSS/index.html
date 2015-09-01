@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Easy Shoping | Home Page</title>
+		<meta charset="UTF=8"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			function validateForm() {
+				var x = document.forms["login"]["username"].value;
+				var y = document.forms["login"]["pass"].value;
+				if (x == null || x == "") {
+					alert("Name must be filled out");
+					return false;
+				}
+				if (y == null || y == "") {
+					alert("Password must be filled out");
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="upper-header">
+					<img src="images/logo.jpg" alt="Free Shoping Logo" id="logo"/>
+					<img src="images/header-adv.jpg" alt="Header Adv" id="header-adv"/>
+					<div class="clear-float"></div>
+				</div>
+				<div id="main-header">
+					<img src="images/header-img.jpg" alt="Header Img"/>
+					<div id="header-div"><span class="white-heading">New Watchs </span><br/> Curabitur adipiscing turpis nec ipsum adipiscing turpis nec.
+					Adipiscing turpis necadipiscing turpis nec<br/><span class="discount"><span style="color: #E6EA92">HURRY!</span>20% Flat Discount </span><button class="more-detail-btn" onclick="window.location='http://www.discounts.easy-shoping.com';">MORE DETAIL</button></div>
+					<div class="clear-float"></div>
+				</div>
+				<nav>
+					<ul class="main-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="product.html">Product</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<aside>
+				<div>
+					<div class="left-sidebar-heading">Shop Categories</div>
+					<ul>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>
+						<li><img src="images/left-sidebar-bullet.jpg"><a href="#">Praesent fringilla consequat dolor</a></li>				
+					</ul>
+				</div>						
+				<div class="left-sidebar-heading">Members Login</div>
+				<h4>Iiquam malesuada convallis nubh donec in eros donec sodales molestie liguia.</h4>
+							
+				<form name="login" action="login.php" method="post" onsubmit="return validateForm()">
+					<input type="text" name="username" placeholder="-enter your name">
+					<input type="password" name="pass" placeholder="********"><br/>
+				<input type="submit" class="login-btn" value="Login"/>
+				</form>	
+				<p>Forgot Your Password? <a href="pass-reset.php" class="click-here">Click here</a></p>
+				<br/>
+				<br/>
+				<img src="images/online-support-img.jpg" alt="Online Support" class="online-support"/>
+			</aside>
+			<section>
+					<h1>Welcome to Our Site</h1>
+					<h4>Donec nec felis eu risus nec felis eu risus nec felis eu risus</h4>
+					<p>Donec nec felis eu risus nec felis eu risus nec felis eu risusDonec nec felis eu risus nec felis eu risus nec felis eu risus</p>
+					<button class="more-btn">MORE</button>
+					<br/>
+					<br/>
+					<br/>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn" onClick="alert('Please login to add this product to your cart!')">CART</button>
+					</div>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn">CART</button>
+					</div>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn">CART</button>
+					</div>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn">CART</button>
+					</div>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn">CART</button>
+					</div>
+					<div class="product-preview">
+						<div>
+							<img src="images/products.jpg"/>
+							<div class="price">$80</div>
+						</div>
+						<p class="product-name">Proin Vel Dolor</p>
+						<p class="product-ad-info">Aliquam malesuada</h4>
+						<p class="product-text">Sed semper lobortis eros. nullam henderertilan nullam henderertilan</p>
+						<button class="more-btn">MORE</button>
+						<button class="cart-btn">CART</button>
+					</div>
+				<div class="clear-float"></div>
+			</section>
+			<footer>			
+				<nav>
+					<ul class="footer-menu"/>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="product.html">Product</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<p class="footer-text">&copy; Copyright Information Goes Here. All Rights Reserved.</p>
+				<p class="footer-text">Designed by:<a href="http://www.alixixi.com">Template alixixi.com</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
