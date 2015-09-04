@@ -1,0 +1,38 @@
+body{
+	font-family: Arial, sans-serif;
+	font-size:16px;
+	color: #2A3754;
+}
+#calculator {
+	width:250px;
+    border:1px solid darkgrey;
+	background: #D8E4F0;
+}
+#result {
+    border:1px solid #A7AEBB ;
+    border-radius:5px;
+    font-size:1.8em;
+    text-align:right;
+    padding:20px 10px 5px 0px;
+	width: 280px;
+}
+button {
+    width: 50px;
+    height: 40px;
+    border: 1px solid #bababa;
+	color: #394458;
+	border-radius: 5px;
+	font-size: 1.4em;
+}
+button:hover{
+    border:1px solid #EBD56D;
+}
+.doubleWidth {
+    width:100px;
+}
+.doubleHeight {
+    height: 80px;
+}
+.trippleWidth {
+	width:170px;
+}

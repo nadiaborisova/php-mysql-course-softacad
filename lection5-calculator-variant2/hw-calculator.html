@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="hw-calculator.css" />
+	
+</head>
+<body>
+	<h1>CALCULATOR</h1>
+	<table id="calculator">
+		<tr>
+			<td colspan="5"><input type="text" id="result" placeholder="0"/></td>
+		</tr>
+		<tr>
+			<td><button id="num7" onclick="notDisplayOper();clearedByNum(7);display(7);">7</button></td>
+			<td><button id="num8" onclick="notDisplayOper();clearedByNum(8); display(8)">8</button></td>
+			<td><button id="num9" onclick="notDisplayOper();clearedByNum(9);display(9)">9</button></td>
+			<td><button onclick="resetBtn()">C</button></td>
+			<td><button id="multiple" onclick="notDisplayOper();displayMulti();">*</button></td>
+		</tr>
+		<tr>
+			<td><button id="num4" onclick="notDisplayOper();clearedByNum(4);display(4)">4</button></td>
+			<td><button id="num5" onclick="notDisplayOper();clearedByNum(5);display(5)">5</button></td>
+			<td><button id="num6" onclick="notDisplayOper();clearedByNum(6);display(6)">6</button></td>
+			<td><button id="minus" onclick="notDisplayOper (); displayMinus();">-</button></td>
+			<td><button id="division" onclick="notDisplayOper (); displayDivision();">/</button></td>
+		</tr>
+		<tr>
+			<td><button id="num1" onclick="notDisplayOper();clearedByNum(1);display(1)">1</button></td>
+			<td><button id="num2" onclick="notDisplayOper();clearedByNum(2);display(2)">2</button></td>
+			<td><button id="num3" onclick="notDisplayOper();clearedByNum(3);display(3)">3</button></td>
+			<td rowspan="2"><button class="doubleHeight" id="plus" onclick="notDisplayOper (); displayPlus();">+</button></td>
+			<td rowspan="2"><button class="doubleHeight" id="equal" onclick="result()">=</button></td>
+		</tr>
+		<tr>
+			<td colspan="3"><button class="trippleWidth" id="num0" onclick="notDisplayOper();clearedByNum(0);display(0)">0</button></td>
+		</tr>
+	</table>
+	<script src="hw-calculator.js"> </script>
+</body>
+</html>
