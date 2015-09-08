@@ -4,20 +4,23 @@
 //Пример: За A = 1, B = 107 скрипта трябва да изведе: 1, 4, skip 3, 16, 25, skip 6, 49, 64, skip 9, 100
 
 function generateNums ($a, $b){
-	for($i=$a; $i<200; $i++){
+	$finalRes = "";
+	for($i=$a; $i<$b; $i++){
 		$num=$i*$i;
-		while($num<$b){
+		while($num<$b&&$num<200){
 			if($num%3!=0){
-				echo $num.",";
+				$finalRes .= $num.",";
 			}
 			else{
 				$tmp = sqrt($num);
-				echo "skip ".$tmp.",";
+				$finalRes .=  "skip ".$tmp.",";
 			}
 			$i++;
 			$num=$i*$i;
 		}
 	}
+	$finalRes = substr_replace($finalRes, "", -1);
+	echo $finalRes;
 }
 generateNums(1, 107);
 
