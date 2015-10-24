@@ -2,9 +2,9 @@
 	include('header.php');
 	include('connect.php');
  
-	$username=stripslashes($_POST['username']);
-	$password=stripslashes(md5($_POST['password']));
 	if (isset($_POST['submit'])) {
+		$username=trim($_POST['username']);
+		$password=trim(md5($_POST['password']));
 		if (empty($username) || empty($password)) {
 			echo "Login failed!";
 		}
