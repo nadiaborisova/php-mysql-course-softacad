@@ -2,12 +2,12 @@
 	include ('lion.php');
 	include ('connect.php');	
 	
-	for($i=1; $i<=4; $i++){
-	
-		$result = mysqli_query($link, "SELECT * FROM lions WHERE id=".$i);
+		$result = mysqli_query($link, "SELECT * FROM lions");
 		$rowsNum = mysqli_num_rows($result);
+	
+	for($i=1; $i<=4; $i++){
 		$row = mysqli_fetch_array($result);
-
+		
 		$obj ='lion'.$i;
 		
 		$obj = new Lion;
