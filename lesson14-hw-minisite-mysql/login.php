@@ -9,8 +9,8 @@
 		}
 		else
 		{
-			$username=stripslashes($_POST['username']);
-			$password=stripslashes($_POST['password']);
+			$username=trim($_POST['username']);
+			$password=trim($_POST['password']);
 
 			$query = mysqli_query($link, "SELECT * FROM users WHERE password='$password' AND username='$username'");
 			$rows = mysqli_num_rows($query);
