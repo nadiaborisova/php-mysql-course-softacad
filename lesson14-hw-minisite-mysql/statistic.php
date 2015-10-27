@@ -15,7 +15,7 @@ if(isset($_SESSION['login_user'])) {
 	<br/><br/>
 	<strong>Task 2: Списък с последните 20 посещения - коя страница, кой IP адрес и дата + час</strong>
 <?php
-	$result2 = mysqli_query($link,"SELECT * FROM `log` ORDER BY id DESC LIMIT 10");
+	$result2 = mysqli_query($link,"SELECT * FROM `log` ORDER BY id DESC LIMIT 20");
 		if(mysqli_num_rows($result2) > 0){
 ?>
 	<table border=1 align="center">
