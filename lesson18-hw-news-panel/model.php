@@ -2,9 +2,30 @@
 require ('database.php'); 
 
 class Model extends Database {
-	public $rowsNum;
-	public $rows;
-	public $query;
+	protected $rowsNum;
+	protected $rows;
+	protected $query;
+	
+	public function setRowsNum($rowsNum){
+		$this->rowsNum = $rowsNum;
+	}
+	public function getRowsNum(){
+		return $this->rowsNum;
+	}
+	
+		public function setRows($rows){
+		$this->rows = $rows;
+	}
+	public function getRows(){
+		return $this->rows;
+	}
+	
+		public function setQuery($query){
+		$this->query = $query;
+	}
+	public function getQuery(){
+		return $this->query;
+	}
 	
 	public function selectAllNews (){
 		$this->query = mysqli_query($this->link, "SELECT * FROM news");

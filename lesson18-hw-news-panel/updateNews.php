@@ -5,26 +5,26 @@
 	$updateNews = new Model;
 	$id=$_GET['id'];
 	$updateNews -> selectOneNews ($id);
-	$updateNews->rows = mysqli_fetch_array($updateNews->query);
+	$rows = mysqli_fetch_array($updateNews->getQuery());
 ?>
 
 <form action="update.php" method="post">
 		<table>
 			<tr>
 				<th><span>ID:</span></th>
-				<td><input type="text" name="id" value="<?php echo $updateNews->rows['id']; ?>"/></td>
+				<td><input type="text" name="id" value="<?php echo $rows['id']; ?>"/></td>
 			</tr>	
 			<tr>
 				<th><span>Title:</span></th>
-				<td><input type="text" name="title" value="<?php echo $updateNews->rows['title']; ?>"/></td>
+				<td><input type="text" name="title" value="<?php echo $rows['title']; ?>"/></td>
 			</tr>			
 			<tr>
 				<th><span>Description:</span></th>
-				<td><textarea name="description" cols="30" rows="10"><?php echo $updateNews->rows['description']; ?></textarea></td>
+				<td><textarea name="description" cols="30" rows="10"><?php echo $rows['description']; ?></textarea></td>
 			</tr>			
 			<tr>
 				<th><span>Autor:</span></th>
-				<td><input type="text" name="autor" value="<?php echo $updateNews->rows['autor']; ?>"/></td>
+				<td><input type="text" name="autor" value="<?php echo $rows['autor']; ?>"/></td>
 			</tr>
 			<tr>
 				<td><input type="submit" name="submit" value="UPDATE"/></td>
