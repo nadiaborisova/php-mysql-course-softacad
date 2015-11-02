@@ -40,14 +40,11 @@ class Shape extends Point {
 			parent::drawAndMovePoint($this->points[$i][0], $this->points[$i][1], $move);
 		}			
 	}
-	public function displayImage(){
-		parent::displayImage();
-	}
 	
 	public function calcPerimeter(){
 		$perimeter=0;
 		for($i=0; $i<(count($this->points)-1); $i++){
-			$perimeter += sqrt((($this->points[$i+1][0]-$this->points[$i][0])*($this->points[$i+1][0]-$this->points[$i][0]))+(($this->points[$i+1][1]-$this->points[$i][1])*($this->points[$i+1][1]-$this->points[$i][1])));
+			$perimeter += sqrt((pow(($this->points[$i+1][0]-$this->points[$i][0]), 2))+(pow(($this->points[$i+1][1]-$this->points[$i][1]), 2)));
 		}
 		return $perimeter;
 	}

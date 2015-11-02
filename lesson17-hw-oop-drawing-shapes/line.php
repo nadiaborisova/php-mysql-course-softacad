@@ -41,12 +41,8 @@ class Line extends Point {
 		parent::drawAndMovePoint($this->x2, $this->y2, $move);
 	}
 
-	public function displayImage(){
-		parent::displayImage();
-	}
-	
 	public function calcDistance(){
-		$this->distance = sqrt((($this->x2-$this->x1)*($this->x2-$this->x1))+(($this->y2-$this->y1)*($this->y2-$this->y1)));
+		$this->distance = sqrt(pow(($this->x2-$this->x1), 2)+(pow(($this->y2-$this->y1), 2)));
 		return $this->distance;
 	}
 }

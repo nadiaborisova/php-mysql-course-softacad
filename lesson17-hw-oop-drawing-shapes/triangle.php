@@ -57,19 +57,16 @@ class Triangle extends Point {
 		parent::drawAndMovePoint($this->x2, $this->y2, $move);
 		parent::drawAndMovePoint($this->x3, $this->y3, $move);
 	}
-	public function displayImage(){
-		parent::displayImage();
-	}
 	public function calcDistanceX1Y1toX2Y2(){
-		$this->distanceX1Y1toX2Y2 = sqrt((($this->x2-$this->x1)*($this->x2-$this->x1))+(($this->y2-$this->y1)*($this->y2-$this->y1)));
+		$this->distanceX1Y1toX2Y2 = sqrt((pow(($this->x2-$this->x1), 2))+(pow(($this->y2-$this->y1), 2)));
 		return $this->distanceX1Y1toX2Y2;
 	}
 	public function calcDistanceX1Y1toX3Y3(){
-		$this->distanceX1Y1toX3Y3 = sqrt((($this->x3-$this->x1)*($this->x3-$this->x1))+(($this->y3-$this->y1)*($this->y3-$this->y1)));
+		$this->distanceX1Y1toX3Y3 = sqrt((pow(($this->x3-$this->x1), 2))+(pow(($this->y3-$this->y1), 2)));
 		return $this->distanceX1Y1toX3Y3;
 	}
 	public function calcDistanceX2Y2toX3Y3(){
-		$this->distanceX2Y2toX3Y3 = sqrt((($this->x3-$this->x2)*($this->x3-$this->x2))+(($this->y3-$this->y2)*($this->y3-$this->y2)));
+		$this->distanceX2Y2toX3Y3 = sqrt((pow(($this->x3-$this->x2), 2))+(pow(($this->y3-$this->y2), 2)));
 		return $this->distanceX2Y2toX3Y3;
 	}
 	public function calcArea(){
