@@ -36,7 +36,7 @@ class Shape extends Point {
 		return $this->points;
 	}
 	public function drawAndMoveShape($move=0){
-		for($i=0; $i<count($this->points)-1; $i+=2){
+		for($i=0; $i<count($this->points); $i++){
 			parent::drawAndMovePoint($this->points[$i][0], $this->points[$i][1], $move);
 		}			
 	}
