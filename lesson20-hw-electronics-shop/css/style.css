@@ -1,0 +1,101 @@
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: Segoe UI, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+#wrapper{
+	margin: auto;
+	width: 900px;
+}
+#content {
+	padding: 20px;
+}
+#header {
+    text-align:center; 
+    width:100%;	
+    display:block;
+    overflow:hidden;
+}
+#header img {
+	border: 4px solid #808080;
+	border-radius: 5px;
+	width: 892px;
+	height: 300px;
+}
+#nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	font-weight: bold;
+	display: inline-block; 
+	border: 2px solid #808080;
+	border-radius: 5px;
+}
+#nav ul li{
+	background-color: #3B3C42;
+	float: left;
+	
+}
+#nav ul li a {
+	color: white;
+	text-decoration: none;
+	border: 2px solid #808080;
+	text-align: center;
+}
+#nav ul li a, #nav ul li a:visited { 
+	display:block; 
+	margin-left: 18px;
+	margin-right: 18px;
+	padding-top: 10px;
+	padding-left: 60px;
+	padding-right:60px;
+	width:auto; 
+	height: 35px;
+	text-decoration:none;
+	border-radius: 5px;
+}
+#nav a:hover  {
+	background-color: white;
+	color: #3B3C42;
+} 
+#nav a:active  {
+	background-color: white;
+	color: #3B3C42;
+} 
+.item {
+	border: 2px solid #808080;
+	border-radius: 5px;
+	float: left;
+	width:30%;
+	padding: 9px;
+	margin: 3px;
+}
+.content-header-basket{
+	float: right;
+}
+#footer {
+	background-color: #3B3C42;
+	color: white;
+	height: 30px;
+	font-size: 0.9em;
+	border: 4px solid #808080;
+	padding-left: 20px;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+#footer a {
+	color: white;
+}
+.clear-float{
+	clear: both;
+}
