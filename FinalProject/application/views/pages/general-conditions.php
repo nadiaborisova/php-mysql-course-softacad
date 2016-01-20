@@ -1,0 +1,12 @@
+<h3 class="text-center" style="color: white;">Общи условия</h3>
+<div class="text-justify">
+    <p>Lorem ipsum dolor sit amet, vim veri commodo id, an prompta inimicus intellegat nec. Eum case electram convenire no, dictas noluisse id nec, mel sint laudem ne. Ubique theophrastus ei his, pro an primis partiendo, ei ceteros volumus voluptatibus pro. At molestie eloquentiam intellegebat mei, et mei corpora deleniti. Sed ex tempor dictas cetero, ne eam consul efficiendi. Per ex soluta dolorem.
+
+    Ea his stet tractatos suavitate, eos maiorum partiendo assueverit ex. Saepe utroque consequat te quo. Usu semper facilis alienum ut, usu feugait adipiscing te, exerci facilisis mnesarchum et eos. Homero suavitate te vix, est no mucius petentium. Ea has partem eruditi, quem graece assentior eu cum.</p>
+    <p>Lorem ipsum dolor sit amet, vim veri commodo id, an prompta inimicus intellegat nec. Eum case electram convenire no, dictas noluisse id nec, mel sint laudem ne. Ubique theophrastus ei his, pro an primis partiendo, ei ceteros volumus voluptatibus pro. At molestie eloquentiam intellegebat mei, et mei corpora deleniti. Sed ex tempor dictas cetero, ne eam consul efficiendi. Per ex soluta dolorem.
+
+    Ea his stet tractatos suavitate, eos maiorum partiendo assueverit ex. Saepe utroque consequat te quo. Usu semper facilis alienum ut, usu feugait adipiscing te, exerci facilisis mnesarchum et eos. Homero suavitate te vix, est no mucius petentium. Ea has partem eruditi, quem graece assentior eu cum.</p>
+    <p>Lorem ipsum dolor sit amet, vim veri commodo id, an prompta inimicus intellegat nec. Eum case electram convenire no, dictas noluisse id nec, mel sint laudem ne. Ubique theophrastus ei his, pro an primis partiendo, ei ceteros volumus voluptatibus pro. At molestie eloquentiam intellegebat mei, et mei corpora deleniti. Sed ex tempor dictas cetero, ne eam consul efficiendi. Per ex soluta dolorem.
+
+    Ea his stet tractatos suavitate, eos maiorum partiendo assueverit ex. Saepe utroque consequat te quo. Usu semper facilis alienum ut, usu feugait adipiscing te, exerci facilisis mnesarchum et eos. Homero suavitate te vix, est no mucius petentium. Ea has partem eruditi, quem graece assentior eu cum.</p>
+</div>
