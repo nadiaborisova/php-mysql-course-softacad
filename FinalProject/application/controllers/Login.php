@@ -35,7 +35,13 @@ class Login extends MY_Controller
       }
       else
       {
-        echo 'Invalid username or password';
+		$data['title'] = 'Ќевалидно потребителско име и/или парола!';
+		
+        $this->load->view('templates/header.php', $data);
+        $this->load->view('templates/left-sidebar.php', $data);
+        $this->load->view('login-error', $data);
+        $this->load->view('templates/right-sidebar.php', $data);
+        $this->load->view('templates/footer.php', $data);
         return false;
       }
       
